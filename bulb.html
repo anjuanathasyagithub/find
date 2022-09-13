@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseover="bulb()">Click Here</button>
+    <img src="lightoff.jpg" alt="light off" id="light">
+    <script>
+        let bulb=()=>
+        {
+            let bul=document.getElementById("light");
+            if(bul.src.match('light')){
+                bul.src="on.jpg";
+            }
+
+            else{
+                bulb.src="lightoff.jpg";
+            }
+        }
+    </script>
+
+  
+
+</html>
