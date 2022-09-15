@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj=[
+            {
+                id:1,
+                name:"akthar",
+                sem:3,
+                course:"mca"
+            },
+            {
+                id:2,
+                name:"ammu",
+                sem:3,
+                course:"mca"
+            },
+            {
+                id:3,
+                name:"anju",
+                sem:3,
+                course:"mca"
+            },
+            {
+                id:4,
+                name:"ashik",
+                sem:3,
+                course:"mca"
+            },
+            {
+                id:5,
+                name:"alita",
+                sem:3,
+                course:"mba"
+            },
+            {
+                id:6,
+                name:"naziya",
+                sem:3,
+                course:"mba"
+            },
+            {
+                id:7,
+                name:"subi",
+                sem:2,
+                course:"mca"
+            },
+            {
+                id:8,
+                name:"megha",
+                sem:2,
+                course:"mba"
+            },
+            {
+                id:9,
+                name:"heera",
+                sem:3,
+                course:"mca"
+            },
+            {
+                id:10,
+                name:"neena",
+                sem:2,
+                course:"msc"
+            },
+            {
+                id:11,
+                name:"riya",
+                sem:3,
+                course:"msc"
+            },
+            {
+                id:12,
+                name:"kichu",
+                sem:3,
+                course:"mca"
+            },
+            {
+                id:13,
+                name:"demin",
+                sem:4,
+                course:"mba"
+            },
+            {
+                id:14,
+                name:"surya",
+                sem:3,
+                course:"msc"
+            },
+            {
+                id:15,
+                name:"liya",
+                sem:2,
+                course:"mca"
+            }
+        ];
+        function x(){
+            console.log(obj);
+        }
+        function map(){
+            let a=obj.map((value)=>value.course)
+            console.log(a);
+        }
+        function find(){
+            let a=obj.find((value)=>value.name)
+            console.log(a);
+        }
+        
+        let n=[20,5,678,10,45,23,7];
+       function sort(){
+        let s=n.sort((first,next)=>first-next);
+        console.log(s);
+       }
+       function red(){
+            let a=n.reduce((tot,val)=>tot+val,10)
+            console.log(a);
+        }
+      </script>
+    <button onclick="x()">click here</button>
+    <button onclick="find()">Find me</button>
+    <button onclick="map()">Map here</button>
+    <button onclick="sort()">Sort</button>
+    <button onclick="red()">Reduce</button>
+</body>
+</html>
